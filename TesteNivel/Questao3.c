@@ -11,6 +11,8 @@ printf ("Fim do laco !\n") ;
 return
 }
 
+// Identifique os erros de compila¸c˜ao que seriam detectados no seguinte programa se eles existirem:
+
 // Erros que o codigo tem são:
 // 1- Falta ponto e vírgula(;) na declaração de variavel N_atual e também no return
 // 2- Variavel i, não foi declarada

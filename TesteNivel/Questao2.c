@@ -13,5 +13,7 @@ printf (" Resultado = \t %d", de ) ;
 return 0;
 }
 
-//O programa faz um um calculo uma determinante de uma matriz 3x3
+// O que faz o seguinte programa? E qual sua saida?
+
+//O programa faz um um calculo uma determinante de uma matriz 3x3, usando a Regra de Sarrus
 // pelo calculo do return o resultado é -8
