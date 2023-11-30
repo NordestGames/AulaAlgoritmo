@@ -16,7 +16,7 @@ return
 // Erros que o codigo tem são:
 // 1- Falta ponto e vírgula(;) na declaração de variavel N_atual e também no return
 // 2- Variavel i, não foi declarada
-// 3- No for, as condições são separadas com ponto e vírgula(;)
+// 3- No for, as condições são separadas com ponto e vírgula(;) e faltou fechar o for com {}
 
 //   Codigo com as correções 
 # include <stdio.h>
@@ -28,6 +28,7 @@ for(i =1 ;i <= N ;i ++) {
 N_prox = N_ant + N_atual;
 N_ant = N_atual;
 N_atual = N_prox;
+}
 printf ("Fim do laco !\n");
 return 0;
 }
