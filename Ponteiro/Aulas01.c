@@ -42,6 +42,9 @@
 
 
 // PONTEIROS DE FUNÇÕES 
+
+#include <stdio.h>
+
 int soma(int a, int b){
     return a + b;
 }
@@ -52,7 +55,7 @@ int calcula(int x, int y, int (*operacao)(int, int)) {
 
 int main(){
     int resultado = calcula(5, 3, soma);
-    printf("Resltado: %d", resultado)
+    printf("Resltado: %d", resultado);
 
     return 0;
 }
