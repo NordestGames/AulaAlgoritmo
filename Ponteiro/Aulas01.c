@@ -27,15 +27,33 @@
 // return 0;
 // }
 
-#include <stdio.h>
-void incrementa(int *ponteiro){
-    (*ponteiro)++;
+// #include <stdio.h>
+// void incrementa(int *ponteiro){
+//     (*ponteiro)++;
+// }
+
+// int main(void){
+// int variavel = 5;
+// incrementa(&variavel);
+// printf("Valor da variavel: %d", variavel);
+
+// return 0;
+// }
+
+
+// PONTEIROS DE FUNÇÕES 
+int soma(int a, int b){
+    return a + b;
 }
 
-int main(void){
-int variavel = 5;
-incrementa(&variavel);
-printf("Valor da variavel: %d", variavel);
-
-return 0;
+int calcula(int x, int y, int (*operacao)(int, int)) {
+    return (*operacao)(x,y);
 }
+
+int main(){
+    int resultado = calcula(5, 3, soma);
+    printf("Resltado: %d", resultado)
+
+    return 0;
+}
+
